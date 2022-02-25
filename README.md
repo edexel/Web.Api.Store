@@ -90,11 +90,12 @@ Paquete de ASP.NET CORE 5
 Una vez descargado el codigo sera necesario ejecutar los siguientes comandos en la consola de administración de paquetes.
 
 1. Clone the repo [https://github.com/edexel/Web.Api.Store.git](https://github.com/edexel/Web.Api.Store.git)
-2. 
+2. Create Migratons Cambiar cadena de conexion 
+4. Create Migratons
    ```PowerShell
    Add-Migration InitialCreate
    ```
-3. Install NPM packages
+4. Create Database
    ```PowerShell
    Update-Database
    ```
