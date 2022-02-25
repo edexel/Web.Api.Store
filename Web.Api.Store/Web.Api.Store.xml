@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Web.Api.Store</name>
+    </assembly>
+    <members>
+        <member name="T:Web.Api.Store.Controllers.FoodTruckController">
+            <summary>
+            Controlller food truck
+            </summary>   
+             [ApiController]
+        </member>
+        <member name="M:Web.Api.Store.Controllers.FoodTruckController.GetTruck(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Get Food Truckand paging data
+            </summary>         
+            <param name="day">This  parameter define  the day order</param>
+            <param name="time">This parameter define time open</param>
+            <param name="page">This parameter define  page num you want to get</param>
+            <param name="take">This parameter define how much item you want to get</param>
+            <response code="200">OK. Devuelve el objeto solicitado.</response>        
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response> 
+        </member>
+        <member name="T:Web.Api.Store.Controllers.ToysController">
+            <summary>
+            Controlller Toys
+            </summary>   
+        </member>
+        <member name="M:Web.Api.Store.Controllers.ToysController.#ctor(Service.CRUD.IGenericService{Domain.PlayThing},AutoMapper.IMapper)">
+            <summary>
+            Constructor Toys
+            </summary>  
+        </member>
+        <member name="M:Web.Api.Store.Controllers.ToysController.GetPaging(System.Int32,System.Int32)">
+            <summary>
+            Get Toys and paging data
+            </summary>         
+            <param name="page">This  parameter define  the number of page to show</param>
+            <param name="take">This parameter define how much item you want to get</param>
+            <response code="200">OK. Devuelve el objeto solicitado.</response>        
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response> 
+        </member>
+        <member name="M:Web.Api.Store.Controllers.ToysController.GetbyId(System.Int32)">
+            <summary>
+            Get Toy by Id
+            </summary>         
+            <param name="id">This  parameter find in toy by id</param>
+            <response code="200">OK. Devuelve el objeto solicitado.</response>        
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response> 
+        </member>
+        <member name="M:Web.Api.Store.Controllers.ToysController.Create(Service.CRUD.DTO_s.ToyDTO)">
+            <summary>
+            Post method for create new toy
+            </summary>         
+            <param name="model">Object data for create a toy</param>
+            <response code="200">OK. Devuelve el objeto solicitado.</response>        
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response> 
+        </member>
+        <member name="M:Web.Api.Store.Controllers.ToysController.Update(Service.CRUD.DTO_s.ToyDTO)">
+            <summary>
+            Put method for update a existing toy
+            </summary>         
+            <param name="model">Object data for update a toy</param>
+            <response code="200">OK. Devuelve el objeto solicitado.</response>        
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response> 
+        </member>
+        <member name="M:Web.Api.Store.Controllers.ToysController.Delete(System.Int32)">
+            <summary>
+            Delete method for delete toy
+            </summary>         
+            <param name="id">param for find toy and delete</param>
+            <response code="200">OK. Devuelve el objeto solicitado.</response>        
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response> 
+        </member>
+    </members>
+</doc>
