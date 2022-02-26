@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Persistance.Database\Persistance.Database.csproj" />
+    <ProjectReference Include="..\Services.CRUD\Service.CRUD.csproj" />
   </ItemGroup>
 
 </Project>

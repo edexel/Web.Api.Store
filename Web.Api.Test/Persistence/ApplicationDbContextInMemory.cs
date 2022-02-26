@@ -8,7 +8,7 @@ namespace Web.Api.Test.Persistence
         public static ApplicationDbContext Get()
         {
             var options = new DbContextOptionsBuilder<ApplicationDbContext>()
-                .UseInMemoryDatabase(databaseName: $"MarshallsDbTest")
+                .UseInMemoryDatabase(databaseName: $"ToysDbTest")
                 .Options;
             return new  ApplicationDbContext(options);
         }
