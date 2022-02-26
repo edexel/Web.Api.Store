@@ -5,6 +5,7 @@ Api web para la administración de inventario para una tienda de “Juguetes”.
 <div id="top"></div>
 
 
+Se utilizo una arquitectura DDD con migraciones y generación de seed automatico con entityBuilder, se agrego repositorio generioco y unit work para hacer mas rapido y dinamico los CRUD, tampbien se utilizo automapper para a su vez utiliza<r TDO , tambien se agrego el paginado  para las consultas grandes. Para la api de food truck se utilizo HttpClient para consumir la Api yLinq para filtrar 
 
 
 
