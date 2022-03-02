@@ -8,7 +8,7 @@
     <ProjectReference Include="..\Common.Collection\Common.Collection.csproj" />
     <ProjectReference Include="..\Common.Mapping\Common.Mapping.csproj" />
     <ProjectReference Include="..\Common.Paging\Common.Paging.csproj" />
-    <ProjectReference Include="..\Common.Repository\Common.Repository.csproj" />
+    <ProjectReference Include="..\Persistence.Repository\Persistence.Repository.csproj" />
   </ItemGroup>
 
 </Project>

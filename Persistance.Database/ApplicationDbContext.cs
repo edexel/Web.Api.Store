@@ -10,9 +10,7 @@ namespace Persistance.Database
         {
 
         }
-
         public DbSet<PlayThing> PlayThing { get; set; }
-        //public DbSet<Salary> salary { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -21,8 +19,6 @@ namespace Persistance.Database
             ModelConfig(builder);
         }
        
-
-
         private void ModelConfig(ModelBuilder modelBuilder)
         {
             new PlayThingConfiguration(modelBuilder.Entity<PlayThing>());

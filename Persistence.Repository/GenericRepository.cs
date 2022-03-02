@@ -1,10 +1,10 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using Persistance.Database;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.EntityFrameworkCore;
-using Persistance.Database;
 
-namespace Common.Repository
+namespace Persistence.Repository
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
@@ -14,7 +14,7 @@ namespace Common.Repository
         public GenericRepository(ApplicationDbContext context)
         {
             _context = context;
-        } 
+        }
 
         public void Delete(int id)
         {

@@ -1,4 +1,3 @@
-using Common.Repository;
 using Domain;
 using FoodTruckService;
 using Microsoft.AspNetCore.Builder;
@@ -10,6 +9,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.PlatformAbstractions;
 using Microsoft.OpenApi.Models;
 using Persistance.Database;
+using Persistence.Repository;
 using Service.CRUD;
 using System;
 using System.IO;
